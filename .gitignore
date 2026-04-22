@@ -1,0 +1,19 @@
+# Compiled executables
+*.exe
+*.o
+*.out
+
+# VS Code settings (optional - uncomment if you don't want to share)
+# .vscode/
+
+# Input/Output files
+input.txt
+output.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp

@@ -1,0 +1,7 @@
+{
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ -o $fileNameWithoutExt $fileName && $fileNameWithoutExt"
+    },
+    "code-runner.runInTerminal": true,
+    "C_Cpp.default.compilerPath": "C:\\Program Files\\mingw-w64\\x86_64-14.1-posix-dwarf-rt_v12-rev0\\bin\\g++.exe"
+}

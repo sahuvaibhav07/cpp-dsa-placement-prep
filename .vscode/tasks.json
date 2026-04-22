@@ -1,0 +1,60 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build and run active file",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "detail": "Compiles the active C++ file"
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: Run in Output Panel",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}\\.vscode\\run_program.js",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            },
+            "dependsOn": [
+                "C/C++: g++ build and run active file"
+            ],
+            "isBackground": false,
+            "detail": "Runs compiled C++ program with output in OUTPUT panel"
+        }
+    ],
+    "version": "2.0.0"
+}
