@@ -14,9 +14,9 @@ int main (){
 
     for (int i = 1; i<5; i++){
         if(arr[i]> max){
-            max = arr[1];
+            max = arr[i];
         }
     }
-    cout << "Maxium =" << max;
+    cout << "Maximum =" << max;
     return 0;
 }
