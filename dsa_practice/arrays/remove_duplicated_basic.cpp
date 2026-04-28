@@ -2,18 +2,23 @@
 using namespace std;
 
 int main() {
-    int arr[5] = {10, 20, 30, 40, 50};
+    int arr[5] = {10, 20, 20, 30, 30};
 
-    int first = arr[0];
-
-    for(int i = 0; i < 4; i++) {
-        arr[i] = arr[i + 1];
-    }
-
-    arr[4] = first;
+    cout << "Unique elements:\n";
 
     for(int i = 0; i < 5; i++) {
-        cout << arr[i] << " ";
+        bool duplicate = false;
+
+        for(int j = 0; j < i; j++) {
+            if(arr[i] == arr[j]) {
+                duplicate = true;
+                break;
+            }
+        }
+
+        if(!duplicate) {
+            cout << arr[i] << endl;
+        }
     }
 
     return 0;

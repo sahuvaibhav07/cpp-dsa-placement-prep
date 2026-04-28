@@ -2,17 +2,19 @@
 using namespace std;
 
 int main() {
-    int arr[5] = {10, 20, 10, 30, 10};
-    int key = 10;
-    int count = 0;
+    int arr[5] = {10, 20, 30, 40, 50};
 
-    for(int i = 0; i < 5; i++) {
-        if(arr[i] == key) {
-            count++;
-        }
+    int first = arr[0];
+
+    for(int i = 0; i < 4; i++) {
+        arr[i] = arr[i + 1];
     }
 
-    cout << "Frequency = " << count;
+    arr[4] = first;
+
+    for(int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
 
     return 0;
 }
